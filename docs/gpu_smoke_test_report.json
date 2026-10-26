@@ -1,0 +1,46 @@
+{
+  "title": "Laporan Smoke Test GPU Mini-BERT Bahasa Indonesia",
+  "environment": {
+    "python_version": "3.13.2",
+    "pytorch_version": "2.6.0+cu124",
+    "pytorch_cuda_build_version": "12.4",
+    "gpu_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "host_nvidia_driver_version": "617.42"
+  },
+  "model_architecture": {
+    "d_model": 128,
+    "num_layers": 2,
+    "num_heads": 4,
+    "d_ff": 512,
+    "vocab_size": 8000,
+    "vocab_sha256": "d2be29d07e76fe0cd15c3fe1b765325a5397a5e5fe30b2c6a5a019c976c552f2",
+    "total_unique_parameters": 1453760
+  },
+  "test_batch_metadata": {
+    "split_source": "train_chunks.jsonl",
+    "batch_size": 4,
+    "sequence_length": 64,
+    "total_positions": 256,
+    "num_mlm_targets": 28,
+    "target_ratio_pct": 10.94,
+    "input_dtype": "torch.int64",
+    "model_dtype": "torch.float32"
+  },
+  "execution_results": {
+    "forward_pass_finite": true,
+    "loss_finite": true,
+    "actual_measured_loss": 9.0151,
+    "expected_theoretical_random_loss": 8.9872,
+    "gradient_check_passed": true,
+    "trainable_parameters_checked": 41,
+    "parameters_with_finite_gradients": 41,
+    "peak_allocated_vram_mb": 51.25,
+    "peak_reserved_vram_mb": 70.0,
+    "single_batch_execution_time_ms": 148.16
+  },
+  "disclaimers": {
+    "training_time_disclaimer": "Waktu eksekusi 1 batch (148 ms) murni merupakan smoke test verifikasi saluran komputasi forward dan backward pada GPU. Angka ini bukan estimasi durasi training penuh satu epoch atau durasi total.",
+    "memory_disclaimer": "Pengukuran memori 51.25 MB allocated pada satu batch kecil (B=4) tanpa optimizer bukan merupakan estimasi kebutuhan memori training penuh. Optimizer seperti AdamW membutuhkan alokasi memori tambahan sebesar 2x lipat ukuran parameter float32 untuk menyimpan first dan second momentum states, serta akumulasi aktivasi backward yang bertambah seiring membesarnya batch size.",
+    "untrained_model_disclaimer": "Bobot model saat pengujian adalah bobot inisialisasi acak normal (mean=0.0, std=0.02). Loss aktual 9.0048 sangat konsisten dengan entropi teoritis 8.000 kelas acak (ln(8000) = 8.9872)."
+  }
+}

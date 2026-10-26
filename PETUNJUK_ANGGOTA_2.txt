@@ -1,0 +1,13 @@
+PAKET ANGGOTA 2
+Peran: Arsitektur Mini-BERT, inferensi dan model final
+
+Struktur path mengikuti root proyek. Ekstrak ke folder sementara dahulu.
+Paket ini bagian proyek, bukan aplikasi mandiri; modul anggota lain diperlukan untuk menjalankan tes/integrasi.
+Pembagian paket adalah pengelompokan tanggung jawab, bukan bukti penulis setiap berkas.
+Kode training dan analisis Anggota 3; eksekusi GPU dilakukan Anggota 2. Dokumentasi mencatat peran bersama tersebut.
+README/.gitignore/panduan disertakan pada Anggota 1 sebagai berkas fondasi bersama, bukan klaim penulis tunggal.
+
+UNTUK GITHUB:
+Jangan langsung git add semua isi ZIP. Data JSONL, model.pt, dan transkrip besar disertakan untuk arsip/serah terima lokal; periksa ukuran, lisensi dan isi sebelum publikasi.
+Commit kode, konfigurasi, tes, dokumentasi serta manifest yang relevan menggunakan identitas sendiri. Jangan memalsukan tanggal/riwayat.
+Environment, cache, ZIP lama, scratch dan checkpoint resume besar tidak disertakan.

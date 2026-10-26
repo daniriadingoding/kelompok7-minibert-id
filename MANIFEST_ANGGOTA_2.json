@@ -1,0 +1,93 @@
+{
+  "role": "Arsitektur Mini-BERT, inferensi dan model final",
+  "files": [
+    {
+      "path": "docs/anggota_2/ai_interaction_transcript_anggota2.jsonl",
+      "bytes": 651517
+    },
+    {
+      "path": "docs/anggota_2/log_interaksi_tahap1.md",
+      "bytes": 7437
+    },
+    {
+      "path": "docs/anggota_2/log_interaksi_tahap2.md",
+      "bytes": 7554
+    },
+    {
+      "path": "docs/anggota_2/log_interaksi_tahap3.md",
+      "bytes": 9046
+    },
+    {
+      "path": "docs/anggota_2/panduan_serah_terima_anggota3.md",
+      "bytes": 15854
+    },
+    {
+      "path": "docs/anggota_2/transkrip_percakapan_anggota2.md",
+      "bytes": 134595
+    },
+    {
+      "path": "docs/gpu_smoke_test_report.json",
+      "bytes": 2172
+    },
+    {
+      "path": "docs/gpu_smoke_test_report.md",
+      "bytes": 2804
+    },
+    {
+      "path": "docs/model_contract.md",
+      "bytes": 16002
+    },
+    {
+      "path": "runs/lr_1e3_gpu/best_model/config.json",
+      "bytes": 349
+    },
+    {
+      "path": "runs/lr_1e3_gpu/best_model/model.pt",
+      "bytes": 5828097
+    },
+    {
+      "path": "src/models/__init__.py",
+      "bytes": 620
+    },
+    {
+      "path": "src/models/attention.py",
+      "bytes": 5994
+    },
+    {
+      "path": "src/models/bert.py",
+      "bytes": 11107
+    },
+    {
+      "path": "src/models/config.py",
+      "bytes": 8472
+    },
+    {
+      "path": "src/models/embeddings.py",
+      "bytes": 5065
+    },
+    {
+      "path": "src/models/encoder.py",
+      "bytes": 4141
+    },
+    {
+      "path": "src/models/mlm_head.py",
+      "bytes": 1492
+    },
+    {
+      "path": "src/models/predict.py",
+      "bytes": 10947
+    },
+    {
+      "path": "tests/test_inference.py",
+      "bytes": 11348
+    },
+    {
+      "path": "tests/test_model_architecture.py",
+      "bytes": 10762
+    },
+    {
+      "path": "tests/test_model_primitives.py",
+      "bytes": 16045
+    }
+  ]
+}
