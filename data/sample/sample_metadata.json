@@ -1,0 +1,18 @@
+{
+  "dataset_id": "wikimedia/wikipedia",
+  "config_name": "20231101.id",
+  "verified_revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+  "collection_timestamp": "2026-10-23T09:57:20.459150+00:00",
+  "status": "complete",
+  "sampling_method": "streaming_shuffle_buffer",
+  "buffer_size": 1000,
+  "seed": 42,
+  "target_samples": 300,
+  "actual_samples": 300,
+  "total_examined": 300,
+  "duplicate_skipped": 0,
+  "duration_seconds": 29.36,
+  "output_file": "data/sample\\wiki_sample_300.jsonl",
+  "file_size_bytes": 1838747,
+  "network_and_cache_note": "Streaming menggunakan request bertahap melalui pustaka datasets/pyarrow. Shuffle buffer bersifat lokal dan tidak menjamin keacakan seragam sempurna dari seluruh 666k artikel."
+}

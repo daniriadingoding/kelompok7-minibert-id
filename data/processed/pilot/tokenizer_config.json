@@ -1,0 +1,39 @@
+{
+  "tokenizer_class": "WordLevelTokenizer",
+  "tokenizer_version": "1.0.0",
+  "vocab_size": 8000,
+  "lowercase": true,
+  "max_length": 64,
+  "special_tokens": {
+    "pad_token": {
+      "token": "[PAD]",
+      "id": 0
+    },
+    "unk_token": {
+      "token": "[UNK]",
+      "id": 1
+    },
+    "cls_token": {
+      "token": "[CLS]",
+      "id": 2
+    },
+    "sep_token": {
+      "token": "[SEP]",
+      "id": 3
+    },
+    "mask_token": {
+      "token": "[MASK]",
+      "id": 4
+    }
+  },
+  "tokenization_rules": {
+    "unicode_normalization": "NFC",
+    "special_token_protection": true,
+    "split_punctuation": true,
+    "hyphen_handling": "split_as_punctuation",
+    "apostrophe_handling": "normalized_and_split",
+    "number_handling": "retained_as_alphanumeric_word",
+    "stemming": false,
+    "stopword_removal": false
+  }
+}

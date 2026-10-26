@@ -1,0 +1,237 @@
+{
+  "role": "Data pipeline, preprocessing, tokenizer, masking dan artefak data",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 301
+    },
+    {
+      "path": "README.md",
+      "bytes": 8926
+    },
+    {
+      "path": "[CAK4KBB3 2026-1] Panduan Proyek 1 - Vibe Coding.md",
+      "bytes": 7597
+    },
+    {
+      "path": "[CAK4KBB3 2026-1] Panduan Proyek 1 - Vibe Coding.pdf",
+      "bytes": 163557
+    },
+    {
+      "path": "data/pilot/excluded_articles_manifest.json",
+      "bytes": 3196
+    },
+    {
+      "path": "data/pilot/pilot_deduplication_log.json",
+      "bytes": 2
+    },
+    {
+      "path": "data/pilot/pilot_metadata.json",
+      "bytes": 789
+    },
+    {
+      "path": "data/pilot/wiki_pilot_3000.jsonl",
+      "bytes": 12978094
+    },
+    {
+      "path": "data/pilot/wiki_pilot_3000_cleaned.jsonl",
+      "bytes": 13605387
+    },
+    {
+      "path": "data/processed/pilot/chunking_manifest.json",
+      "bytes": 1465
+    },
+    {
+      "path": "data/processed/pilot/mlm_excluded_chunks_manifest.json",
+      "bytes": 1313
+    },
+    {
+      "path": "data/processed/pilot/split_manifest.json",
+      "bytes": 52786
+    },
+    {
+      "path": "data/processed/pilot/test.jsonl",
+      "bytes": 1394618
+    },
+    {
+      "path": "data/processed/pilot/test_chunks.jsonl",
+      "bytes": 2196608
+    },
+    {
+      "path": "data/processed/pilot/tokenizer_config.json",
+      "bytes": 869
+    },
+    {
+      "path": "data/processed/pilot/train.jsonl",
+      "bytes": 11082794
+    },
+    {
+      "path": "data/processed/pilot/train_chunks.jsonl",
+      "bytes": 17362531
+    },
+    {
+      "path": "data/processed/pilot/val.jsonl",
+      "bytes": 1124322
+    },
+    {
+      "path": "data/processed/pilot/val_chunks.jsonl",
+      "bytes": 1714545
+    },
+    {
+      "path": "data/processed/pilot/vocab.json",
+      "bytes": 158128
+    },
+    {
+      "path": "data/sample/.gitkeep",
+      "bytes": 39
+    },
+    {
+      "path": "data/sample/sample_metadata.json",
+      "bytes": 750
+    },
+    {
+      "path": "data/sample/wiki_sample_300.jsonl",
+      "bytes": 1838747
+    },
+    {
+      "path": "data/sample/wiki_sample_300_cleaned.jsonl",
+      "bytes": 1905836
+    },
+    {
+      "path": "docs/ai_interaction_transcript.jsonl",
+      "bytes": 736435
+    },
+    {
+      "path": "docs/ai_interaction_transcript_full.jsonl",
+      "bytes": 1104047
+    },
+    {
+      "path": "docs/cleaning_comparison_report.json",
+      "bytes": 11154
+    },
+    {
+      "path": "docs/cleaning_comparison_report.md",
+      "bytes": 5653
+    },
+    {
+      "path": "docs/data_contract_pilot.md",
+      "bytes": 17074
+    },
+    {
+      "path": "docs/installed_dependencies.txt",
+      "bytes": 638
+    },
+    {
+      "path": "docs/log_interaksi_tahap1.md",
+      "bytes": 4145
+    },
+    {
+      "path": "docs/log_interaksi_tahap2.md",
+      "bytes": 4482
+    },
+    {
+      "path": "docs/log_interaksi_tahap3.md",
+      "bytes": 4822
+    },
+    {
+      "path": "docs/log_interaksi_tahap4.md",
+      "bytes": 10617
+    },
+    {
+      "path": "docs/log_interaksi_tahap5.md",
+      "bytes": 13638
+    },
+    {
+      "path": "docs/pilot_audit_report.json",
+      "bytes": 12008
+    },
+    {
+      "path": "docs/pilot_audit_report.md",
+      "bytes": 11298
+    },
+    {
+      "path": "docs/sample_audit_report.json",
+      "bytes": 9123
+    },
+    {
+      "path": "docs/sample_audit_report.md",
+      "bytes": 8099
+    },
+    {
+      "path": "docs/vocabulary_comparison_report.json",
+      "bytes": 4066
+    },
+    {
+      "path": "docs/vocabulary_comparison_report.md",
+      "bytes": 3244
+    },
+    {
+      "path": "requirements-data.txt",
+      "bytes": 156
+    },
+    {
+      "path": "requirements-pytorch.txt",
+      "bytes": 774
+    },
+    {
+      "path": "src/data/__init__.py",
+      "bytes": 57
+    },
+    {
+      "path": "src/data/apply_cleaner.py",
+      "bytes": 15378
+    },
+    {
+      "path": "src/data/audit_sample.py",
+      "bytes": 19115
+    },
+    {
+      "path": "src/data/build_vocab.py",
+      "bytes": 16362
+    },
+    {
+      "path": "src/data/chunker.py",
+      "bytes": 8599
+    },
+    {
+      "path": "src/data/cleaner.py",
+      "bytes": 9336
+    },
+    {
+      "path": "src/data/dataset.py",
+      "bytes": 15770
+    },
+    {
+      "path": "src/data/download_sample.py",
+      "bytes": 12464
+    },
+    {
+      "path": "src/data/process_and_audit_pilot.py",
+      "bytes": 21313
+    },
+    {
+      "path": "src/data/split_dataset.py",
+      "bytes": 10005
+    },
+    {
+      "path": "src/data/tokenizer.py",
+      "bytes": 12621
+    },
+    {
+      "path": "tests/test_cleaner.py",
+      "bytes": 6019
+    },
+    {
+      "path": "tests/test_dataset_and_collator.py",
+      "bytes": 13380
+    },
+    {
+      "path": "tests/test_sampling_logic.py",
+      "bytes": 4307
+    },
+    {
+      "path": "tests/test_tokenizer_and_pipeline.py",
+      "bytes": 14007
+    }
+  ]
+}

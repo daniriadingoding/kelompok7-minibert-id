@@ -1,0 +1,5 @@
+# Dependensi minimum untuk pengambilan sampel dan audit awal data
+# (Tahap 1 - Anggota 1: Data Pipeline)
+datasets>=2.16.0
+pyarrow>=14.0.0
+fsspec>=2023.10.0

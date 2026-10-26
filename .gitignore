@@ -1,0 +1,28 @@
+# Virtual Environment
+.venv/
+.venv-gpu/
+venv/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints
+
+# Data & Datasets (Raw & Large Files)
+data/raw/
+*.parquet
+*.arrow
+*.tar.gz
+*.zip
+
+# Cache directories
+.cache/
+hf_cache/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

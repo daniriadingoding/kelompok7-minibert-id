@@ -1,0 +1,14 @@
+# ==============================================================================
+# Dependensi PyTorch CPU (Khusus Perangkat Anggota 1: Data Pipeline)
+# ==============================================================================
+# Berkas ini HANYA digunakan pada perangkat Anggota 1 untuk pengujian pipeline data CPU.
+#
+# PERINGATAN UNTUK ANGGOTA 2 (Laptop Training GPU RTX 4060 Laptop 8GB VRAM):
+# JANGAN gunakan index-url CPU ini pada laptop training!
+# Anggota 2 harus memasang PyTorch berkemampuan CUDA secara mandiri menggunakan:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121  (atau cu124)
+# ==============================================================================
+
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu
+

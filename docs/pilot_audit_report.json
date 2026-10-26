@@ -1,0 +1,277 @@
+{
+  "dataset_type": "pilot_subset",
+  "cleaner_version": "1.1.0",
+  "input_raw_file": "data/pilot/wiki_pilot_3000.jsonl",
+  "output_cleaned_file": "data/pilot/wiki_pilot_3000_cleaned.jsonl",
+  "raw_file_size_bytes": 12978094,
+  "raw_file_size_mb": 12.38,
+  "clean_file_size_bytes": 13605387,
+  "clean_file_size_mb": 12.98,
+  "processing_duration_seconds": 3.96,
+  "summary": {
+    "raw_articles_count": 3000,
+    "cleaned_articles_retained": 3000,
+    "duplicate_articles_excluded": 0,
+    "articles_empty_after_clean": 0,
+    "articles_modified_by_cleaner": 2955,
+    "total_raw_characters": 12445627,
+    "total_clean_characters": 11788620,
+    "net_character_reduction_percent": 5.28,
+    "total_raw_approx_words": 1682527,
+    "total_clean_approx_words": 1602732,
+    "net_word_reduction_percent": 4.74
+  },
+  "character_length_distribution": {
+    "min": 4,
+    "median": 455.0,
+    "p90": 10233.199999999999,
+    "max": 152362,
+    "mean": 3929.54
+  },
+  "approx_word_count_distribution": {
+    "note": "Hitungan berbasis pemisahan spasi (whitespace split). Bukan jumlah token tokenizer final.",
+    "min": 1,
+    "median": 63.0,
+    "p90": 1410.1,
+    "max": 20220,
+    "mean": 534.24
+  },
+  "reduction_ratio_distribution": {
+    "min": 0.0,
+    "median": 0.1633,
+    "p90": 0.2604,
+    "max": 0.9318,
+    "mean": 0.1515
+  },
+  "rule_action_counts": {
+    "unicode_normalized": 0,
+    "control_chars_stripped": 0,
+    "boilerplate_truncated": 2738,
+    "wiki_templates_cleaned": 16,
+    "wiki_links_expanded": 2,
+    "html_and_ref_cleaned": 28,
+    "urls_removed": 12,
+    "whitespace_normalized": 2953
+  },
+  "top_10_largest_reductions": [
+    {
+      "id": "2706517",
+      "title": "Melati van Java",
+      "raw_len": 2918,
+      "clean_len": 199,
+      "reduction_percent": 93.18,
+      "rules": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Daftar pustaka",
+        "text_before_cut": "anda. Selain itu, ia juga memakai pseudonim Mathilde atau Max van Ravensteijn.",
+        "text_after_cut": "Mathilde, ‘Twee moeders’, dalam De Katholieke Illustratie, 1872; novelle.\n Ma"
+      },
+      "clean_preview": "Melati van Java adalah sebuah pseudonim dari Nicolina Maria (Marie) Sloot (), seorang penulis Hindia Belanda berdarah Belanda. Selain itu, ia juga memakai pseudonim Mathilde atau Max van Ravensteijn."
+    },
+    {
+      "id": "2706143",
+      "title": "Arbor Low",
+      "raw_len": 1627,
+      "clean_len": 141,
+      "reduction_percent": 91.33,
+      "rules": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Referensi",
+        "text_before_cut": "ct, Derbyshire, Inggris. Arbor Low berada di kawasan White Peak, Peak District",
+        "text_after_cut": "Bacaan tambahan \n \n Addy, S.O. (1911). The ‘Harbour’ and Barrows at Arbour-Low"
+      },
+      "clean_preview": "Arbor Low adalah sebuah monumen henge Neolitikum di Peak District, Derbyshire, Inggris. Arbor Low berada di kawasan White Peak, Peak District"
+    },
+    {
+      "id": "2698516",
+      "title": "Daftar sekolah menengah kejuruan di Tangerang",
+      "raw_len": 324,
+      "clean_len": 33,
+      "reduction_percent": 89.81,
+      "rules": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Referensi",
+        "text_before_cut": "Daftar SMK di Kabupaten Tangerang",
+        "text_after_cut": "Data Sekolah\n\nLihat pula \n Sekolah Menengah Kejuruan\n Daftar sekolah menengah"
+      },
+      "clean_preview": "Daftar SMK di Kabupaten Tangerang"
+    },
+    {
+      "id": "2701057",
+      "title": "Daftar sungai di Jambi",
+      "raw_len": 932,
+      "clean_len": 148,
+      "reduction_percent": 84.12,
+      "rules": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Lihat pula",
+        "text_before_cut": "Menurut abjad \n Batang Hari\n Batang Merangin\n\n Batang Tembesi\n\n Sungai Tungkal",
+        "text_after_cut": "Daftar sungai di Indonesia\n Daftar sungai di Sumatra\n\nReferensi\n\nPustaka \n W."
+      },
+      "clean_preview": "Berikut ini adalah daftar sungai yang mengalir di wilayah provinsi Jambi:\n\nMenurut abjad\nBatang Hari\nBatang Merangin\n\nBatang Tembesi\n\nSungai Tungkal"
+    },
+    {
+      "id": "2862",
+      "title": "Yatim piatu",
+      "raw_len": 398,
+      "clean_len": 69,
+      "reduction_percent": 82.66,
+      "rules": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Lihat pula",
+        "text_before_cut": "Taksum adalah seseorang yang tidak lagi memiliki ayah sebelum baligh.",
+        "text_after_cut": "Anak angkat, orang yang diasuh oleh orang lain dan dianggap sebagai anak sendi"
+      },
+      "clean_preview": "Taksum adalah seseorang yang tidak lagi memiliki ayah sebelum baligh."
+    },
+    {
+      "id": "2699583",
+      "title": "Anna dari Austria (1549–1580)",
+      "raw_len": 1268,
+      "clean_len": 270,
+      "reduction_percent": 78.71,
+      "rules": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Referensi",
+        "text_before_cut": "adalah putri sulung Maximilian II, Kaisar Romawi Suci, dan Maria dari Spanyol.",
+        "text_after_cut": "J. Brouwer, Montigny, Representative of the Netherlands by Philip II (Amsterda"
+      },
+      "clean_preview": "Anna dari Austria (2 November 1549 – 26 Oktober 1580) adalah seorang permaisuri Spanyol. Ia menjadi permaisuri berkat pernikahannya dengan pamannya sendiri, Raja Felipe II dari Spanyol.\n\nAnna adalah putri sulung Maximili..."
+    },
+    {
+      "id": "2706255",
+      "title": "Sinode Mahakudus",
+      "raw_len": 1052,
+      "clean_len": 240,
+      "reduction_percent": 77.19,
+      "rules": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Referensi",
+        "text_before_cut": "hakudus meliputi segala jenis pertanyaan gerejawi dan sebagian materi sekuler.",
+        "text_after_cut": "Sumber \n \n Statesman's handbook for Russia. 1896.\n Cracraft, James. \"Diplomati"
+      },
+      "clean_preview": "Sinode Mahakudus () adalah badan pemerintahan tertinggi Gereja Ortodoks Rusia antara 1721 dan 1918 (saat Gereja menghimpun ulang Patriarkat). Yurisdiksi Sinode Mahakudus meliputi segala jenis pertanyaan gerejawi dan seba..."
+    },
+    {
+      "id": "2706976",
+      "title": "Kuali Gundestrup",
+      "raw_len": 1033,
+      "clean_len": 242,
+      "reduction_percent": 76.57,
+      "rules": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Referensi",
+        "text_before_cut": "nempatkannya dalam akhir periode La Tène atau awal Zaman Besi Romawi.\n\nCatatan",
+        "text_after_cut": "Green, Miranda, Celtic Art, Reading the Messages, 1996, The Everyman Art Libra"
+      },
+      "clean_preview": "Kuali Gundestrup adalah sebuah bejana perak yang kaya akan dekorasi, yang berasal dari antara tahun 200 SM dan 300 M, atau setidaknya antara 150 SM dan 1 SM, Ini menempatkannya dalam akhir periode La Tène atau awal Zaman..."
+    },
+    {
+      "id": "2699565",
+      "title": "Margarita Teresa dari Spanyol",
+      "raw_len": 2214,
+      "clean_len": 541,
+      "reduction_percent": 75.56,
+      "rules": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Daftar pustaka",
+        "text_before_cut": "Velázquez, dan ia juga menjadi subjek lukisan-lukisan Velázquez yang lainnya.",
+        "text_after_cut": "Andics, Hellmut, Die Frauen der Habsburger (Vienna: Jugend und Volk, 1985). In"
+      },
+      "clean_preview": "Margarita Teresa dari Spanyol (12 Juli 1651 – 12 Maret 1673) adalah sesosok perempuan yang mendapatkan gelar Maharani Romawi Suci, Adipatni Utama Austria, serta Ratu Hungaria dan Bohemia, berkat pernikahannya dengan Leop..."
+    },
+    {
+      "id": "2705336",
+      "title": "Valsgärde",
+      "raw_len": 843,
+      "clean_len": 212,
+      "reduction_percent": 74.85,
+      "rules": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Referensi",
+        "text_before_cut": "wedia dan kepercayaan pagan di Swedia. Kebun saat ini bermula dari abad ke-16.",
+        "text_after_cut": "Arwidsson, Greta (1942) Valsgärde 6 (Almqvist & Wiksells Boktryckeri-A.B. Upps"
+      },
+      "clean_preview": "Valsgärde atau Vallsgärde adalah sebuah kebun di sungai Fyris, sekitar tiga kilometer dari utara Gamla Uppsala, pusat kuno raja-raja Swedia dan kepercayaan pagan di Swedia. Kebun saat ini bermula dari abad ke-16."
+    }
+  ],
+  "qualitative_representative_samples": {
+    "short_article": {
+      "title": "Karo",
+      "id": "3986",
+      "char_len": 4,
+      "words": 1,
+      "preview": "Nama"
+    },
+    "median_article": {
+      "title": "(264147) 2009 UF132",
+      "id": "1211161",
+      "char_len": 455,
+      "words": 59,
+      "preview": "(264147) 2009 UF132 adalah sebuah asteroid. Asteroid ini merupakan bagian dari asteroid Troya Yupiter, yang terletak di orbit Yupiter. Eksentrisitas orbit asteroid ini tercatat sebesar 0.060, sementara magnitudo mutlaknya adalah 12.9.\n\nPembentukan\n\nSeperti asteroid secara keselur"
+    },
+    "long_article": {
+      "title": "Indonesia",
+      "id": "44",
+      "char_len": 152362,
+      "words": 20220,
+      "preview": "Indonesia (), dikenal dengan nama resmi Republik Indonesia atau lebih lengkapnya Negara Kesatuan Republik Indonesia, adalah negara kepulauan di Asia Tenggara yang dilintasi garis khatulistiwa dan berada di antara daratan benua Asia dan Oseania sehingga dikenal sebagai negara lint"
+    },
+    "list_like_article": {
+      "title": "Skuad Piala Dunia Antarklub FIFA 2015",
+      "id": "2701216",
+      "char_len": 635,
+      "words": 84,
+      "preview": "Setiap tim yang berpartisipasi dalam Piala Dunia Antarklub FIFA 2015 wajib mendaftarkan skuad berisi 23 pemain (tiga di antaranya merupakan penjaga gawang) sebelum batas akhir yang ditetapkan oleh FIFA, yakni pada 30 November 2015. Penggantian pemain akibat cedera diizinkan palin"
+    },
+    "code_article": {
+      "title": "Yesus (disambiguasi)",
+      "id": "1123",
+      "char_len": 1876,
+      "words": 271,
+      "preview": "Kitab Suci\nYesus Kristus: tokoh sentral dalam agama Kristen. Dalam agama Islam dikenal dengan nama Isa (Al-Masih). Orang Kristen yang berbahasa Arab mengenalnya dengan nama Yashu' atau Yashuk.\nYesus bin Sirakh, penulis Kitab Yesus bin Sirakh\nYesus Barabas, penjahat yang dibebaska"
+    },
+    "foreign_quote_article": {
+      "title": "Rencana pendudukan kembali Indonesia",
+      "id": "2698915",
+      "char_len": 2694,
+      "words": 350,
+      "preview": "Setelah Jepang menyerah pada tanggal 15 Agustus 1945, ia harus melepaskan kembali daerah pendudukannya. Ini berarti daerah-daerah koloni yang semula direbut dari bangsa Barat yang tergabung ke dalam blok Sekutu harus dikembalikan. Memang negara-negara barat itu masih menganggap d"
+    }
+  },
+  "deduplication_summary": {
+    "unique_text_hashes": 3000,
+    "exact_duplicate_pairs_found": 0,
+    "note": "Deduplikasi berbasis hash SHA-256 hanya menjaring duplikasi verbatim persis. Artikel dengan parafrasa ringan, variasi ejaan, atau kemiripan topikal tidak terdeteksi oleh deduplikasi persis ini dan memerlukan pemeriksaan n-gram minhash/Jaccard pada tahap lanjut."
+  }
+}

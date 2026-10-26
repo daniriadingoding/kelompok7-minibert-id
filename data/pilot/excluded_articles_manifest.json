@@ -1,0 +1,89 @@
+{
+  "total_raw_records": 3000,
+  "min_words_threshold": 10,
+  "excluded_count": 9,
+  "eligible_count": 2991,
+  "excluded_articles": [
+    {
+      "id": "2701224",
+      "title": "Heartbeat",
+      "url": "https://id.wikipedia.org/wiki/Heartbeat",
+      "word_count": 9,
+      "char_count": 76,
+      "reason": "Panjang teks di bawah batas minimum kelayakan (9 < 10 kata)",
+      "preview": "Heartbeat dapat merujuk kepada:\nHeartbeat (perusahaan)\nHeartbeat (film 2011)"
+    },
+    {
+      "id": "2698516",
+      "title": "Daftar sekolah menengah kejuruan di Tangerang",
+      "url": "https://id.wikipedia.org/wiki/Daftar%20sekolah%20menengah%20kejuruan%20di%20Tangerang",
+      "word_count": 5,
+      "char_count": 33,
+      "reason": "Panjang teks di bawah batas minimum kelayakan (5 < 10 kata)",
+      "preview": "Daftar SMK di Kabupaten Tangerang"
+    },
+    {
+      "id": "2699194",
+      "title": "Eparki Tirus",
+      "url": "https://id.wikipedia.org/wiki/Eparki%20Tirus",
+      "word_count": 8,
+      "char_count": 54,
+      "reason": "Panjang teks di bawah batas minimum kelayakan (8 < 10 kata)",
+      "preview": "Eparki Agung Tyre (Maronit)\nEparki Agung Tyre (Melkit)"
+    },
+    {
+      "id": "2703021",
+      "title": "Eparki Homs",
+      "url": "https://id.wikipedia.org/wiki/Eparki%20Homs",
+      "word_count": 9,
+      "char_count": 59,
+      "reason": "Panjang teks di bawah batas minimum kelayakan (9 < 10 kata)",
+      "preview": "Eparki Agung Homs (Yunani Melkit)\nEparki Agung Homs (Siria)"
+    },
+    {
+      "id": "2699890",
+      "title": "Bulbophyllum curvibulbum",
+      "url": "https://id.wikipedia.org/wiki/Bulbophyllum%20curvibulbum",
+      "word_count": 7,
+      "char_count": 52,
+      "reason": "Panjang teks di bawah batas minimum kelayakan (7 < 10 kata)",
+      "preview": "adalah sejenis spesies anggrek dalam genus Polidata."
+    },
+    {
+      "id": "3636",
+      "title": "Aries",
+      "url": "https://id.wikipedia.org/wiki/Aries",
+      "word_count": 4,
+      "char_count": 38,
+      "reason": "Panjang teks di bawah batas minimum kelayakan (4 < 10 kata)",
+      "preview": "Aries (perbintangan)\nAries (astrologi)"
+    },
+    {
+      "id": "3746",
+      "title": "Filemon (disambiguasi)",
+      "url": "https://id.wikipedia.org/wiki/Filemon%20%28disambiguasi%29",
+      "word_count": 9,
+      "char_count": 59,
+      "reason": "Panjang teks di bawah batas minimum kelayakan (9 < 10 kata)",
+      "preview": "Filemon - tokoh Perjanjian Baru\nSurat Paulus kepada Filemon"
+    },
+    {
+      "id": "3986",
+      "title": "Karo",
+      "url": "https://id.wikipedia.org/wiki/Karo",
+      "word_count": 1,
+      "char_count": 4,
+      "reason": "Panjang teks di bawah batas minimum kelayakan (1 < 10 kata)",
+      "preview": "Nama"
+    },
+    {
+      "id": "2703397",
+      "title": "Eparki Mosul",
+      "url": "https://id.wikipedia.org/wiki/Eparki%20Mosul",
+      "word_count": 8,
+      "char_count": 54,
+      "reason": "Panjang teks di bawah batas minimum kelayakan (8 < 10 kata)",
+      "preview": "Eparki Agung Mosul (Kaldea)\nEparki Agung Mosul (Siria)"
+    }
+  ]
+}

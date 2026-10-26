@@ -1,0 +1,20 @@
+{
+  "dataset_id": "wikimedia/wikipedia",
+  "config_name": "20231101.id",
+  "verified_revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+  "collection_timestamp": "2026-10-23T10:43:39.649606+00:00",
+  "status": "complete",
+  "sampling_method": "streaming_shuffle_buffer",
+  "buffer_size": 2000,
+  "seed": 42,
+  "target_samples": 3000,
+  "actual_samples": 3000,
+  "total_examined": 3000,
+  "duplicate_skipped": 0,
+  "empty_skipped": 0,
+  "max_examined_limit": 10000,
+  "duration_seconds": 24.28,
+  "output_file": "data/pilot\\wiki_pilot_3000.jsonl",
+  "file_size_bytes": 12978094,
+  "notes": "Streaming menggunakan request parsial HTTP range via datasets/pyarrow. Shuffle buffer bersifat lokal dan tidak menjamin keacakan seragam sempurna dari seluruh 666k artikel."
+}

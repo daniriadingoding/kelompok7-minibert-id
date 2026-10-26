@@ -1,0 +1,219 @@
+{
+  "dataset_file": "data/sample/wiki_sample_300.jsonl",
+  "file_size_bytes": 1838747,
+  "file_size_kb": 1795.65,
+  "total_records_loaded": 300,
+  "corrupt_lines_count": 0,
+  "corrupt_line_errors": [],
+  "column_analysis": {
+    "id": {
+      "present_count": 300,
+      "missing_count": 0,
+      "null_count": 0,
+      "empty_string_count": 0,
+      "wrong_type_count": 0,
+      "data_types": [
+        "str"
+      ]
+    },
+    "url": {
+      "present_count": 300,
+      "missing_count": 0,
+      "null_count": 0,
+      "empty_string_count": 0,
+      "wrong_type_count": 0,
+      "data_types": [
+        "str"
+      ]
+    },
+    "title": {
+      "present_count": 300,
+      "missing_count": 0,
+      "null_count": 0,
+      "empty_string_count": 0,
+      "wrong_type_count": 0,
+      "data_types": [
+        "str"
+      ]
+    },
+    "text": {
+      "present_count": 300,
+      "missing_count": 0,
+      "null_count": 0,
+      "empty_string_count": 0,
+      "wrong_type_count": 0,
+      "data_types": [
+        "str"
+      ]
+    }
+  },
+  "integrity_and_uniqueness": {
+    "unique_ids_count": 300,
+    "duplicate_ids_count": 0,
+    "unique_texts_count": 300,
+    "duplicate_texts_count": 0
+  },
+  "character_length_distribution": {
+    "min": 127,
+    "median": 709.5,
+    "p90": 20103.40000000001,
+    "max": 87157,
+    "mean": 5934.31
+  },
+  "approx_word_count_distribution": {
+    "note": "Hitungan berbasis pemisahan spasi (whitespace split). Bukan jumlah token tokenizer final.",
+    "min": 16,
+    "median": 95.0,
+    "p90": 2643.300000000001,
+    "max": 11417,
+    "mean": 795.71
+  },
+  "anomaly_indicators": {
+    "note": "Indikasi anomali ini mendata pola teks yang berpotensi memerlukan pembersihan, bukan keputusan otomatis membuang artikel.",
+    "articles_with_tag_like_patterns": 9,
+    "articles_with_wiki_markup": 3,
+    "articles_with_urls_in_body": 12,
+    "articles_with_control_chars": 0,
+    "articles_under_100_chars": 0,
+    "articles_with_section_headings": 272,
+    "examples": {
+      "tag_like": [
+        {
+          "id": "1013",
+          "title": "Bahasa Melayu Klasik",
+          "matches": [
+            "<p>",
+            "<p>",
+            "<p>",
+            "<p>",
+            "<p>"
+          ],
+          "context": "Bahasa Melayu Klasik adalah dialek bahasa Melayu yang dipakai oleh Kesultanan Melaka (abad ke-14), Kesultanan Aceh, dan sejumlah entitas politik lain di sekitarnya hingga abad ke-1..."
+        },
+        {
+          "id": "873",
+          "title": "Sastra Jawa",
+          "matches": [
+            "<p xml:lang=\"jv\">"
+          ],
+          "context": "Sastra Jawa secara global bisa dibagi menjadi dua kategori yaitu yang ditulis dalam bentuk prosa atau puisi. Dalam bentuk prosa biasanya disebut gancaran dan dalam bentuk puisi bia..."
+        },
+        {
+          "id": "2698634",
+          "title": "Modu Chanyu",
+          "matches": [
+            "</ref>"
+          ],
+          "context": "Modu, Modun, atau Maodun (, skt. 234 – skt. 174 SM) merupakan penguasa Xiongnu yang kedua yang diketahui dan pendiri kekaisaran Xiongnu. Ia menjadi penguasa Xiongnu setelah ia meme..."
+        }
+      ],
+      "wiki_markup": [
+        {
+          "id": "843",
+          "title": "Yesus",
+          "matches": [
+            "{{cite book|first=Rabbi Joshua|last=Garroway|chapter=Ioudaios|editors=Amy-Jill Levine, Marc Z. Brettler|url=https://books.google.co.uk/books?id=DZRJ5zXUI2QC&lpg=PA524&pg=PA524|title=The Jewish Annotated New Testament|publisher=Oxford University Press|date=2011|isbn=9780195297706|pages=524–526}}"
+          ],
+          "context": "Yesus (, ;  4 SM  sampai 30–33 M; ; ), juga disebut sebagai Yesus dari Nazaret atau Yesus Kristus, adalah tokoh sentral Kekristenan. Menurut sebagian besar denominasi Kristen, Yesu..."
+        },
+        {
+          "id": "792",
+          "title": "Hamengkubuwana IX",
+          "matches": [
+            "{{efn|Bergelar Kanjeng Gusti Pangeran Adipati Anom Hamengku Negara Sudibya Raja Putra Narendra ing Mataram.}}"
+          ],
+          "context": "Jenderal TNI. (Tit.) (Purn.) H. Sri Sultan Hamengkubuwana IX (; , lahir dengan nama Gusti Raden Mas Dorodjatun) adalah Sultan Yogyakarta kesembilan dan Gubernur Daerah Istimewa Yog..."
+        },
+        {
+          "id": "896",
+          "title": "Dharma",
+          "matches": [
+            "{{multiple image\n| perrow            = 2\n| total_width       = 250\n| caption_align     = center\n| title             = Dharma\n| image1            = A havan ceremony on the banks of Ganges, Muni ki Reti, Rishikesh.jpg\n| caption1          = Ritual dan ritus peralihan\n| image2            = Yoga Meditation Pos-410px.png\n| caption2          = Yoga, perilaku pribadi\n| image3            = Ahimsa.svg\n| caption3          = Kebajikan seperti ahimsa (tanpa kekerasan)\n| image4            = Balanced scales.svg\n| caption4          = Hukum dan keadilan\n| image5            = Raja Ravi Varma - Sankaracharya.jpg\n| caption5          = Sannyasa dan tahapan kehidupan<ref>Harold Coward (2004), \"bioetika Hindu untuk abad kedua puluh satu\", JAMA: The Journal of American Medical Association' ', 291(22), hlm. 2759–2760; Quote–\"Pendekatan tahapan kehidupan Hindu (ashrama dharma)...\"</ref>\n| image6            = Dharma Wheel.svg\n| caption6          = Tugas, seperti belajar dari guru\n}}"
+          ],
+          "context": "Dharma atau Sanatana Dharma adalah kebenaran absolut yang kekal dan abadi. \"kebenaran\" berbeda dengan \"benar\" sebab \"benar\" bersifat bersifat relatif, menyesuaikan dengan sudut pan..."
+        }
+      ],
+      "url_in_text": [
+        {
+          "id": "873",
+          "title": "Sastra Jawa",
+          "matches": [
+            "http://www.sastra.org"
+          ],
+          "context": "Sastra Jawa secara global bisa dibagi menjadi dua kategori yaitu yang ditulis dalam bentuk prosa atau puisi. Dalam bentuk prosa biasanya disebut gancaran dan dalam bentuk puisi bia..."
+        },
+        {
+          "id": "2699191",
+          "title": "Eparki Sidon",
+          "matches": [
+            "http://www.catholic-hierarchy.org/diocese/dsadm.html",
+            "http://www.gcatholic.org/dioceses/diocese/said1.htm"
+          ],
+          "context": "Eparki Sidon (Latin: Eparchia Sidoniensis Maronitarum) adalah sebuah eparki Gereja Maronit yang menjadi subyek langsung dari Patriark Maronit Antiokhia di Lebanon. Pada 2014, terda..."
+        },
+        {
+          "id": "79",
+          "title": "Winston Churchill",
+          "matches": [
+            "http://www.bbc.co.uk/programmes/b00tpsvk"
+          ],
+          "context": "Sir Winston Leonard Spencer-Churchill (30 November 187424 Januari 1965) adalah seorang politikus, perwira militer, dan penulis Britania Raya. Ia merupakan Perdana Menteri Britania ..."
+        }
+      ],
+      "control_char": [],
+      "very_short": [],
+      "section_headings": [
+        {
+          "id": "2700350",
+          "title": "Daftar sekolah dasar negeri di Bengkulu",
+          "headings": [
+            "Referensi",
+            "Pranala luar "
+          ]
+        },
+        {
+          "id": "1098",
+          "title": "Arnhem",
+          "headings": [
+            "Lihat pula ",
+            "Referensi",
+            "Pranala luar "
+          ]
+        },
+        {
+          "id": "2700245",
+          "title": "Keuskupan Agung Vitória",
+          "headings": [
+            "Referensi"
+          ]
+        }
+      ]
+    }
+  },
+  "stratified_inspection_samples": {
+    "short_article": {
+      "id": "2699880",
+      "title": "Oxycanus sirpus",
+      "url": "https://id.wikipedia.org/wiki/Oxycanus%20sirpus",
+      "char_len": 127,
+      "approx_words": 16,
+      "preview": "Oxycanus sirpus adalah sejenis ngengat dari keluarga Hepialidae. Jenis ngengat ini ditemukan di Victoria, Australia.\n\nReferensi"
+    },
+    "median_article": {
+      "id": "2699104",
+      "title": "Federasi Futsal Indonesia",
+      "url": "https://id.wikipedia.org/wiki/Federasi%20Futsal%20Indonesia",
+      "char_len": 711,
+      "approx_words": 96,
+      "preview": "adalah sebuah organisasi olahraga yang menaungi aktivitas futsal di Indonesia. Organisasi ini berada dalam naungan Persatuan Sepak Bola Seluruh Indonesia. Organisasi ini merupakan pembaruan dari Badan Futsal Nasional yang dibubarkan PSSI pada tahun 2014, serta berganti nama dari Asosiasi Futsal Indo"
+    },
+    "long_article": {
+      "id": "843",
+      "title": "Yesus",
+      "url": "https://id.wikipedia.org/wiki/Yesus",
+      "char_len": 87157,
+      "approx_words": 11417,
+      "preview": "Yesus (, ;  4 SM  sampai 30–33 M; ; ), juga disebut sebagai Yesus dari Nazaret atau Yesus Kristus, adalah tokoh sentral Kekristenan. Menurut sebagian besar denominasi Kristen, Yesus dipandang sebagai Allah Putra (Allah Anak). Namun, seluruh umat Kristen meyakini bahwa Yesus adalah Mesias (atau Krist"
+    }
+  }
+}

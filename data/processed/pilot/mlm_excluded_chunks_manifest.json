@@ -1,0 +1,51 @@
+{
+  "title": "Manifest Chunk yang Dikeluarkan dari Pelatihan MLM",
+  "description": "Mencatat chunk yang memiliki 0 token kandidat reguler (seluruh isi berupa [UNK] atau token khusus).",
+  "splits_summary": {
+    "train": {
+      "file": "data/processed/pilot\\train_chunks.jsonl",
+      "total_raw_chunks": 27002,
+      "mlm_ready_chunks": 27002,
+      "excluded_chunks_count": 0
+    },
+    "val": {
+      "file": "data/processed/pilot\\val_chunks.jsonl",
+      "total_raw_chunks": 2685,
+      "mlm_ready_chunks": 2685,
+      "excluded_chunks_count": 0
+    },
+    "test": {
+      "file": "data/processed/pilot\\test_chunks.jsonl",
+      "total_raw_chunks": 3427,
+      "mlm_ready_chunks": 3426,
+      "excluded_chunks_count": 1
+    }
+  },
+  "excluded_chunks": [
+    {
+      "doc_id": "3792",
+      "chunk_index": 3,
+      "line_index": 2544,
+      "num_content_tokens": 24,
+      "reason": "Seluruh token isi adalah [UNK] atau token khusus; tidak ada kandidat token reguler (ID >= 5) yang layak dijadikan target masking MLM.",
+      "preview_input_ids": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "split": "test"
+    }
+  ]
+}

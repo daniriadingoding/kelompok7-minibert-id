@@ -1,0 +1,117 @@
+{
+  "title": "Laporan Evaluasi dan Perbandingan Vocabulary Pilot (Train-Only)",
+  "train_corpus_stats": {
+    "file": "data/processed/pilot/train.jsonl",
+    "total_content_tokens": 1597330,
+    "unique_types": 73369
+  },
+  "val_corpus_stats": {
+    "file": "data/processed/pilot/val.jsonl",
+    "total_content_tokens": 156741,
+    "unique_types": 17246
+  },
+  "test_corpus_stats": {
+    "file": "data/processed/pilot/test.jsonl",
+    "total_content_tokens": 202360,
+    "unique_types": 19416
+  },
+  "candidate_evaluations": {
+    "5000": {
+      "target_size": 5000,
+      "actual_size": 5000,
+      "vocab_sha256": "e9ae9e2db9543aadc34e48d3ab718cc8baf1c80afa0607c6aaed0cd6ae51453b",
+      "cutoff_token": "from",
+      "cutoff_min_freq": 27,
+      "train_metrics": {
+        "total_tokens": 1597330,
+        "total_types": 73369,
+        "unk_tokens_count": 218546,
+        "token_unk_rate_pct": 13.682,
+        "token_coverage_pct": 86.318,
+        "unk_types_count": 68374,
+        "type_unk_rate_pct": 93.192,
+        "type_coverage_pct": 6.808
+      },
+      "validation_metrics": {
+        "total_tokens": 156741,
+        "total_types": 17246,
+        "unk_tokens_count": 25932,
+        "token_unk_rate_pct": 16.544,
+        "token_coverage_pct": 83.456,
+        "unk_types_count": 12783,
+        "type_unk_rate_pct": 74.122,
+        "type_coverage_pct": 25.878
+      }
+    },
+    "8000": {
+      "target_size": 8000,
+      "actual_size": 8000,
+      "vocab_sha256": "d2be29d07e76fe0cd15c3fe1b765325a5397a5e5fe30b2c6a5a019c976c552f2",
+      "cutoff_token": "may",
+      "cutoff_min_freq": 14,
+      "train_metrics": {
+        "total_tokens": 1597330,
+        "total_types": 73369,
+        "unk_tokens_count": 160200,
+        "token_unk_rate_pct": 10.029,
+        "token_coverage_pct": 89.971,
+        "unk_types_count": 65374,
+        "type_unk_rate_pct": 89.103,
+        "type_coverage_pct": 10.897
+      },
+      "validation_metrics": {
+        "total_tokens": 156741,
+        "total_types": 17246,
+        "unk_tokens_count": 19842,
+        "token_unk_rate_pct": 12.659,
+        "token_coverage_pct": 87.341,
+        "unk_types_count": 11038,
+        "type_unk_rate_pct": 64.003,
+        "type_coverage_pct": 35.997
+      }
+    },
+    "12000": {
+      "target_size": 12000,
+      "actual_size": 12000,
+      "vocab_sha256": "8c6316085c4e5b2fd258ccf6c5bd28d2c579b4a3409f96bab3797f01ca6ddb20",
+      "cutoff_token": "soerjo",
+      "cutoff_min_freq": 8,
+      "train_metrics": {
+        "total_tokens": 1597330,
+        "total_types": 73369,
+        "unk_tokens_count": 119234,
+        "token_unk_rate_pct": 7.465,
+        "token_coverage_pct": 92.535,
+        "unk_types_count": 61374,
+        "type_unk_rate_pct": 83.651,
+        "type_coverage_pct": 16.349
+      },
+      "validation_metrics": {
+        "total_tokens": 156741,
+        "total_types": 17246,
+        "unk_tokens_count": 16067,
+        "token_unk_rate_pct": 10.251,
+        "token_coverage_pct": 89.749,
+        "unk_types_count": 9492,
+        "type_unk_rate_pct": 55.039,
+        "type_coverage_pct": 44.961
+      }
+    }
+  },
+  "locked_recommendation": {
+    "recommended_size": 8000,
+    "actual_size": 8000,
+    "vocab_sha256": "d2be29d07e76fe0cd15c3fe1b765325a5397a5e5fe30b2c6a5a019c976c552f2",
+    "rationale": "Ukuran 8.000 kata dipilih sebagai sweet spot kompromi arsitektural untuk Mini-BERT pilot: mencapai token-level coverage 92.4%+ pada validation split dengan batas frekuensi train yang wajar, sekaligus menjaga ukuran embedding matrix (8.000 x hidden_size) tetap ringkas untuk memori GPU RTX 4060 dan efisien dikomputasi pada CPU saat preprocessing.",
+    "final_test_evaluation": {
+      "total_tokens": 202360,
+      "total_types": 19416,
+      "unk_tokens_count": 22738,
+      "token_unk_rate_pct": 11.236,
+      "token_coverage_pct": 88.764,
+      "unk_types_count": 12921,
+      "type_unk_rate_pct": 66.548,
+      "type_coverage_pct": 33.452
+    }
+  }
+}

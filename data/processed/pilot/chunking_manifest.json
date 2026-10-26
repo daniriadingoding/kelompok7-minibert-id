@@ -1,0 +1,44 @@
+{
+  "train": {
+    "input_file": "data/processed/pilot\\train.jsonl",
+    "output_file": "data/processed/pilot\\train_chunks.jsonl",
+    "total_documents": 2393,
+    "total_chunks_retained": 27002,
+    "total_tail_chunks_discarded": 227,
+    "docs_with_multiple_chunks": 1856,
+    "docs_single_chunk": 537,
+    "total_padded_chunks": 2140,
+    "total_content_tokens": 1596952,
+    "avg_content_tokens_per_chunk": 59.14,
+    "max_length": 64,
+    "min_chunk_tokens_threshold": 5
+  },
+  "val": {
+    "input_file": "data/processed/pilot\\val.jsonl",
+    "output_file": "data/processed/pilot\\val_chunks.jsonl",
+    "total_documents": 299,
+    "total_chunks_retained": 2685,
+    "total_tail_chunks_discarded": 30,
+    "docs_with_multiple_chunks": 235,
+    "docs_single_chunk": 64,
+    "total_padded_chunks": 267,
+    "total_content_tokens": 156694,
+    "avg_content_tokens_per_chunk": 58.36,
+    "max_length": 64,
+    "min_chunk_tokens_threshold": 5
+  },
+  "test": {
+    "input_file": "data/processed/pilot\\test.jsonl",
+    "output_file": "data/processed/pilot\\test_chunks.jsonl",
+    "total_documents": 299,
+    "total_chunks_retained": 3427,
+    "total_tail_chunks_discarded": 39,
+    "docs_with_multiple_chunks": 244,
+    "docs_single_chunk": 55,
+    "total_padded_chunks": 256,
+    "total_content_tokens": 202301,
+    "avg_content_tokens_per_chunk": 59.03,
+    "max_length": 64,
+    "min_chunk_tokens_threshold": 5
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "input_raw_file": "data/sample/wiki_sample_300.jsonl",
+  "output_cleaned_file": "data/sample/wiki_sample_300_cleaned.jsonl",
+  "cleaner_version": "1.1.0",
+  "cleaner_config": {
+    "normalize_unicode_nfc": true,
+    "strip_control_chars": true,
+    "clean_html_and_ref_tags": true,
+    "clean_wiki_templates": true,
+    "expand_wiki_links": true,
+    "remove_urls_in_body": true,
+    "truncate_boilerplate_sections": true,
+    "normalize_whitespace": true
+  },
+  "summary": {
+    "total_articles_before": 300,
+    "total_articles_after": 300,
+    "articles_changed_count": 294,
+    "articles_unchanged_count": 6,
+    "articles_empty_after_clean": 0,
+    "total_chars_before": 1780294,
+    "total_chars_after": 1708068,
+    "total_approx_words_before": 238713,
+    "total_approx_words_after": 229965,
+    "net_char_reduction_percent": 4.06,
+    "net_word_reduction_percent": 3.66
+  },
+  "reduction_ratio_distribution": {
+    "min": 0.0,
+    "median": 0.117,
+    "p90": 0.2859,
+    "max": 0.7556,
+    "mean": 0.1423
+  },
+  "rule_trigger_counts": {
+    "unicode_normalized": 0,
+    "control_chars_stripped": 0,
+    "boilerplate_truncated": 276,
+    "wiki_templates_cleaned": 3,
+    "wiki_links_expanded": 0,
+    "html_and_ref_cleaned": 7,
+    "urls_removed": 1,
+    "whitespace_normalized": 293
+  },
+  "rule_before_after_examples": {
+    "unicode_normalized": [],
+    "control_chars_stripped": [],
+    "boilerplate_truncated": [
+      {
+        "id": "2700350",
+        "title": "Daftar sekolah dasar negeri di Bengkulu",
+        "raw_snippet": "Berikut adalah Daftar sekolah dasar negeri di Bengkulu diurutkan berdasarkan masing-masing kabupaten dan kota sebagai berikut:\n\nReferensi\n\nPranala luar \n\nDaftar sekolah dasar di Indonesia\nSekolah dasa...",
+        "clean_snippet": "Berikut adalah Daftar sekolah dasar negeri di Bengkulu diurutkan berdasarkan masing-masing kabupaten dan kota sebagai berikut:"
+      },
+      {
+        "id": "1098",
+        "title": "Arnhem",
+        "raw_snippet": "Arnhem  adalah ibu kota provinsi Gelderland, Belanda. Kota ini memiliki penduduk sekitar 146.095 jiwa.\n\nIklim\n\nLihat pula \n Gereja Santo Eusebius, Arnhem\n\nReferensi\n\nPranala luar \n Situs web resmi\n\nLi...",
+        "clean_snippet": "Arnhem adalah ibu kota provinsi Gelderland, Belanda. Kota ini memiliki penduduk sekitar 146.095 jiwa.\n\nIklim"
+      }
+    ],
+    "wiki_templates_cleaned": [
+      {
+        "id": "843",
+        "title": "Yesus",
+        "raw_snippet": "Yesus (, ;  4 SM  sampai 30–33 M; ; ), juga disebut sebagai Yesus dari Nazaret atau Yesus Kristus, adalah tokoh sentral Kekristenan. Menurut sebagian besar denominasi Kristen, Yesus dipandang sebagai ...",
+        "clean_snippet": "Yesus (, ; 4 SM sampai 30–33 M; ; ), juga disebut sebagai Yesus dari Nazaret atau Yesus Kristus, adalah tokoh sentral Kekristenan. Menurut sebagian besar denominasi Kristen, Yesus dipandang sebagai Al..."
+      },
+      {
+        "id": "792",
+        "title": "Hamengkubuwana IX",
+        "raw_snippet": "Jenderal TNI. (Tit.) (Purn.) H. Sri Sultan Hamengkubuwana IX (; , lahir dengan nama Gusti Raden Mas Dorodjatun) adalah Sultan Yogyakarta kesembilan dan Gubernur Daerah Istimewa Yogyakarta yang pertama...",
+        "clean_snippet": "Jenderal TNI. (Tit.) (Purn.) H. Sri Sultan Hamengkubuwana IX (; , lahir dengan nama Gusti Raden Mas Dorodjatun) adalah Sultan Yogyakarta kesembilan dan Gubernur Daerah Istimewa Yogyakarta yang pertama..."
+      }
+    ],
+    "wiki_links_expanded": [],
+    "html_and_ref_cleaned": [
+      {
+        "id": "1013",
+        "title": "Bahasa Melayu Klasik",
+        "raw_snippet": "Bahasa Melayu Klasik adalah dialek bahasa Melayu yang dipakai oleh Kesultanan Melaka (abad ke-14), Kesultanan Aceh, dan sejumlah entitas politik lain di sekitarnya hingga abad ke-18. Apakah dialek tem...",
+        "clean_snippet": "Bahasa Melayu Klasik adalah dialek bahasa Melayu yang dipakai oleh Kesultanan Melaka (abad ke-14), Kesultanan Aceh, dan sejumlah entitas politik lain di sekitarnya hingga abad ke-18. Apakah dialek tem..."
+      },
+      {
+        "id": "873",
+        "title": "Sastra Jawa",
+        "raw_snippet": "Sastra Jawa secara global bisa dibagi menjadi dua kategori yaitu yang ditulis dalam bentuk prosa atau puisi. Dalam bentuk prosa biasanya disebut gancaran dan dalam bentuk puisi biasa disebut dengan is...",
+        "clean_snippet": "Sastra Jawa secara global bisa dibagi menjadi dua kategori yaitu yang ditulis dalam bentuk prosa atau puisi. Dalam bentuk prosa biasanya disebut gancaran dan dalam bentuk puisi biasa disebut dengan is..."
+      }
+    ],
+    "urls_removed": [
+      {
+        "id": "2700157",
+        "title": "Eparki Agung Tripoli (Maronit)",
+        "raw_snippet": "Eparki Agung Tripoli (Tripoli dari umat Maronit) (Latin: Archieparchia Tripolitanus Maronitarum) adalah sebuah Eparki Agung non-Metropolitan (keuskupan agung Katolik Timur) dari Gereja Maronit di bara...",
+        "clean_snippet": "Eparki Agung Tripoli (Tripoli dari umat Maronit) (Latin: Archieparchia Tripolitanus Maronitarum) adalah sebuah Eparki Agung non-Metropolitan (keuskupan agung Katolik Timur) dari Gereja Maronit di bara..."
+      }
+    ],
+    "whitespace_normalized": [
+      {
+        "id": "2700780",
+        "title": "Skuad Kejuaraan Dunia Antarklub FIFA 2005",
+        "raw_snippet": "Berikut ini daftar pemain yang bertanding dalam Kejuaraan Dunia Antarklub FIFA 2005 yang diadakan di Jepang dari 11 Desember hingga 18 Desember 2005\n\nAl-Ahly \nPelatih utama:  Manuel José de Jesus\n\nAl-...",
+        "clean_snippet": "Berikut ini daftar pemain yang bertanding dalam Kejuaraan Dunia Antarklub FIFA 2005 yang diadakan di Jepang dari 11 Desember hingga 18 Desember 2005\n\nAl-Ahly\nPelatih utama: Manuel José de Jesus\n\nAl-It..."
+      },
+      {
+        "id": "2700350",
+        "title": "Daftar sekolah dasar negeri di Bengkulu",
+        "raw_snippet": "Berikut adalah Daftar sekolah dasar negeri di Bengkulu diurutkan berdasarkan masing-masing kabupaten dan kota sebagai berikut:\n\nReferensi\n\nPranala luar \n\nDaftar sekolah dasar di Indonesia\nSekolah dasa...",
+        "clean_snippet": "Berikut adalah Daftar sekolah dasar negeri di Bengkulu diurutkan berdasarkan masing-masing kabupaten dan kota sebagai berikut:"
+      }
+    ]
+  },
+  "top_reduced_articles_for_inspection": [
+    {
+      "id": "2699565",
+      "title": "Margarita Teresa dari Spanyol",
+      "raw_char_len": 2214,
+      "clean_char_len": 541,
+      "reduction_ratio": 0.7556,
+      "rules_applied": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Daftar pustaka",
+        "text_before_cut": "Velázquez, dan ia juga menjadi subjek lukisan-lukisan Velázquez yang lainnya.",
+        "text_after_cut": "Andics, Hellmut, Die Frauen der Habsburger (Vienna: Jugend und Volk, 1985). In"
+      },
+      "clean_preview": "Margarita Teresa dari Spanyol (12 Juli 1651 – 12 Maret 1673) adalah sesosok perempuan yang mendapatkan gelar Maharani Romawi Suci, Adipatni Utama Austria, serta Ratu Hungaria dan Bohemia, berkat pernikahannya dengan Leopold I, Kaisar Romawi Suci, wal..."
+    },
+    {
+      "id": "2699631",
+      "title": "Jean-Étienne Liotard",
+      "raw_char_len": 565,
+      "clean_char_len": 203,
+      "reduction_ratio": 0.6407,
+      "rules_applied": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Referensi",
+        "text_before_cut": "t-potret berbahan pastel, dan membuat karya-karya dari perjalanannya ke Turki.",
+        "text_after_cut": "Pranala luar \n Short biography\n 74 works by Liotard at the Musées d'Art et d'H"
+      },
+      "clean_preview": "Jean-Étienne Liotard (; ) adalah seorang pelukis, connoisseur seni rupa dan diler asal Swiss. Ia dikenal karena membuat potret-potret berbahan pastel, dan membuat karya-karya dari perjalanannya ke Turki."
+    },
+    {
+      "id": "1098",
+      "title": "Arnhem",
+      "raw_char_len": 259,
+      "clean_char_len": 108,
+      "reduction_ratio": 0.583,
+      "rules_applied": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Lihat pula",
+        "text_before_cut": "i Gelderland, Belanda. Kota ini memiliki penduduk sekitar 146.095 jiwa.\n\nIklim",
+        "text_after_cut": "Gereja Santo Eusebius, Arnhem\n\nReferensi\n\nPranala luar \n Situs web resmi\n\nLiha"
+      },
+      "clean_preview": "Arnhem adalah ibu kota provinsi Gelderland, Belanda. Kota ini memiliki penduduk sekitar 146.095 jiwa.\n\nIklim"
+    },
+    {
+      "id": "2700871",
+      "title": "Eparki Joubbé, Sarba, dan Jounieh",
+      "raw_char_len": 862,
+      "clean_char_len": 402,
+      "reduction_ratio": 0.5336,
+      "rules_applied": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Referensi",
+        "text_before_cut": "Pontificio Annuario, Libreria Editrice Vaticana, Città del Vaticano, 2003, .",
+        "text_after_cut": "Pranala luar \n http://www.catholic-hierarchy.org/diocese/djsjm.html\n http://ww"
+      },
+      "clean_preview": "Eparki Joubbé, Sarba dan Jounieh (Latin: Eparchia Ioubbensis, Sarbensis et Iuniensis Maronitarum) adalah sebuah eparki Gereja Maronit yang menjadi Patriark Maronit Antiokhia di Lebanon. Pada 2013, terdapat 396,250 baptisan. Eparki tersebut sekarang d..."
+    },
+    {
+      "id": "2699228",
+      "title": "Daftar sekolah dasar negeri di Aceh",
+      "raw_char_len": 405,
+      "clean_char_len": 199,
+      "reduction_ratio": 0.5086,
+      "rules_applied": [
+        "boilerplate_truncated",
+        "whitespace_normalized"
+      ],
+      "cut_context": {
+        "matched_heading": "Referensi",
+        "text_before_cut": ":\n\nUpdate Terakhir : 27 Feb 2020\n\nSumber : Badan Pusat Statistik Provinsi Aceh",
+        "text_after_cut": "Jumlah Sekolah, Guru dan Murid Sekolah Dasar (SD) Negeri menurut Kabupaten/Kot"
+      },
+      "clean_preview": "Berikut adalah Daftar Sekolah Dasar Negeri di Aceh diurutkan berdasarkan masing-masing kabupaten dan kota sebagai berikut:\n\nUpdate Terakhir : 27 Feb 2020\n\nSumber : Badan Pusat Statistik Provinsi Aceh"
+    }
+  ],
+  "residual_anomalies": {
+    "residual_tag_like_count": 1,
+    "residual_tag_like_samples": [
+      {
+        "id": "2699756",
+        "title": "Elixir (bahasa pemrograman)",
+        "matches": [
+          "<filename>",
+          "<- [1,2,3,4,5], rem(n, 2) == 1, do: n*n\n[1, 9, 25]\n\nPencocokan pola (destructuring)\niex>",
+          "<- 1..1000, do: spawn fn ->"
+        ]
+      }
+    ],
+    "residual_wiki_markup_count": 0,
+    "residual_wiki_markup_samples": [],
+    "residual_urls_count": 0,
+    "residual_urls_samples": []
+  },
+  "newly_emerged_duplicate_texts_count": 0,
+  "newly_emerged_duplicate_pairs": []
+}
