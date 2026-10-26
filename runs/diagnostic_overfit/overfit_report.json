@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETED",
+  "diagnostic_type": "single_batch_overfit_check",
+  "config_used": "configs/cpu_overfit_diagnostic.json",
+  "device": "cpu",
+  "batch_size": 4,
+  "num_targets_in_batch": 28,
+  "total_steps_executed": 18,
+  "duration_sec": 0.8491482734680176,
+  "initial_loss": 9.023270198277064,
+  "final_loss": 0.4120559351784842,
+  "initial_top1_acc": 0.0,
+  "final_top1_acc": 1.0,
+  "final_top5_acc": 1.0,
+  "loss_decreased": true,
+  "relative_loss_reduction_pct": 95.43340799816497,
+  "converged_under_threshold": true,
+  "history_every_10_steps": [
+    {
+      "step": 10,
+      "loss": 3.0225862775530135,
+      "top1_acc": 0.9285714285714286,
+      "top5_acc": 1.0
+    },
+    {
+      "step": 18,
+      "loss": 0.4120559351784842,
+      "top1_acc": 1.0,
+      "top5_acc": 1.0
+    }
+  ],
+  "note": "Bobot model hasil overfit check ini adalah artefak diagnostik dan TIDAK digunakan untuk memulai eksperimen baseline utama."
+}

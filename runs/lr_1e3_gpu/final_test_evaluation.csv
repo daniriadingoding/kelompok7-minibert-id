@@ -1,0 +1,2 @@
+timestamp_utc,evaluation_name,model_dir,test_file,device,total_targets,masked_loss,exp_masked_token_loss,top1_acc_pct,top5_acc_pct,duration_sec,python_version,pytorch_version,cuda_version
+2026-10-24T12:27:32.340195+00:00,final_test_evaluation,runs/lr_1e3_gpu/best_model,test_chunks.jsonl,cuda,27071,5.494841769203895,243.4330045149923,17.443020206124636,31.753536995308636,1.0441534519195557,3.13.2,2.6.0+cu124,12.4

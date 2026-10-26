@@ -1,0 +1,86 @@
+{
+  "evaluation_name": "final_test_evaluation",
+  "timestamp_utc": "2026-10-24T12:27:32.340195+00:00",
+  "environment": {
+    "python_version": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "pytorch_version": "2.6.0+cu124",
+    "cuda_available": true,
+    "cuda_runtime_version": "12.4",
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "model_metadata": {
+    "model_dir": "runs/lr_1e3_gpu/best_model",
+    "checkpoint_status": "trained",
+    "model_pt_sha256": "0c0de0b0b88f51b5d7dfc474a3dc8bcbfe6d86d3c527e30869fd28eccb1ef8b8",
+    "config_json_sha256": "521a31762dea889dc6ae865d9ad20816b90cecc35eb8212b2b725445a51f3026",
+    "vocab_canonical_sha256": "d2be29d07e76fe0cd15c3fe1b765325a5397a5e5fe30b2c6a5a019c976c552f2",
+    "model_config": {
+      "vocab_size": 8000,
+      "pad_token_id": 0,
+      "d_model": 128,
+      "num_layers": 2,
+      "num_heads": 4,
+      "d_ff": 512,
+      "max_position_embeddings": 64,
+      "dropout": 0.1,
+      "attention_dropout": 0.1,
+      "layer_norm_eps": 1e-12,
+      "initializer_range": 0.02,
+      "vocab_sha256": "d2be29d07e76fe0cd15c3fe1b765325a5397a5e5fe30b2c6a5a019c976c552f2"
+    }
+  },
+  "data_metadata": {
+    "data_dir": "data/processed/pilot",
+    "test_file": "test_chunks.jsonl",
+    "test_file_sha256": "f82e9d06e1f2c8aac888195c926f61db42eec75c75f685ceb68202b8b9c4f868",
+    "total_raw_chunks": 3427,
+    "evaluated_chunks": 3426,
+    "excluded_chunks_count": 1,
+    "excluded_chunks": [
+      {
+        "doc_id": "3792",
+        "chunk_index": 3,
+        "line_index": 2544,
+        "num_content_tokens": 24,
+        "reason": "Seluruh token isi adalah [UNK] atau token khusus; tidak ada kandidat token reguler (ID >= 5) yang layak dijadikan target masking MLM.",
+        "preview_input_ids": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "evaluation_parameters": {
+    "device": "cuda",
+    "batch_size": 32,
+    "eval_seed": 42,
+    "mlm_probability": 0.15,
+    "masking_rule": "80_10_10_deterministic"
+  },
+  "metrics": {
+    "masked_loss": 5.494841769203895,
+    "exp_masked_token_loss": 243.4330045149923,
+    "exp_masked_loss": 243.4330045149923,
+    "top1_accuracy": 0.17443020206124635,
+    "top5_accuracy": 0.31753536995308634,
+    "top1_correct": 4722,
+    "top5_correct": 8596,
+    "total_targets": 27071,
+    "evaluated_chunks": 3426,
+    "evaluation_duration_sec": 1.0441534519195557
+  }
+}

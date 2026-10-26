@@ -1,0 +1,165 @@
+{
+  "role": "Training, konfigurasi eksperimen, evaluasi, grafik dan pembahasan",
+  "files": [
+    {
+      "path": "configs/baseline_gpu.json",
+      "bytes": 1249
+    },
+    {
+      "path": "configs/cpu_overfit_diagnostic.json",
+      "bytes": 1169
+    },
+    {
+      "path": "configs/cpu_smoke.json",
+      "bytes": 1219
+    },
+    {
+      "path": "configs/gpu_smoke.json",
+      "bytes": 1252
+    },
+    {
+      "path": "configs/lr_1e3_gpu.json",
+      "bytes": 1320
+    },
+    {
+      "path": "docs/anggota_3/README_paket_final.md",
+      "bytes": 6313
+    },
+    {
+      "path": "docs/anggota_3/analisis_baseline_dan_komparasi.md",
+      "bytes": 12997
+    },
+    {
+      "path": "docs/anggota_3/evaluasi_final_split_test.png",
+      "bytes": 389016
+    },
+    {
+      "path": "docs/anggota_3/final_test_terminal.log",
+      "bytes": 2454
+    },
+    {
+      "path": "docs/anggota_3/kurva_pelatihan_baseline_gpu.png",
+      "bytes": 439776
+    },
+    {
+      "path": "docs/anggota_3/kurva_perbandingan_lr.png",
+      "bytes": 495602
+    },
+    {
+      "path": "docs/anggota_3/laporan_evaluasi_final_test.md",
+      "bytes": 7470
+    },
+    {
+      "path": "docs/anggota_3/log_interaksi_anggota3.md",
+      "bytes": 29375
+    },
+    {
+      "path": "docs/anggota_3/panduan_eksekusi_gpu.md",
+      "bytes": 11108
+    },
+    {
+      "path": "docs/anggota_3/pembahasan_hasil_akhir.md",
+      "bytes": 20363
+    },
+    {
+      "path": "docs/anggota_3/penguncian_model_final.md",
+      "bytes": 5933
+    },
+    {
+      "path": "docs/anggota_3/perbandingan_baseline_vs_frekuensi.png",
+      "bytes": 215820
+    },
+    {
+      "path": "docs/anggota_3/transkrip_percakapan_anggota3.md",
+      "bytes": 208401
+    },
+    {
+      "path": "runs/baseline_gpu/best_model/config.json",
+      "bytes": 349
+    },
+    {
+      "path": "runs/baseline_gpu/training_history.csv",
+      "bytes": 1389
+    },
+    {
+      "path": "runs/baseline_gpu/training_history.json",
+      "bytes": 4736
+    },
+    {
+      "path": "runs/cpu_smoke_run/best_model/config.json",
+      "bytes": 349
+    },
+    {
+      "path": "runs/cpu_smoke_run/training_history.csv",
+      "bytes": 653
+    },
+    {
+      "path": "runs/cpu_smoke_run/training_history.json",
+      "bytes": 2741
+    },
+    {
+      "path": "runs/diagnostic_overfit/overfit_report.json",
+      "bytes": 972
+    },
+    {
+      "path": "runs/lr_1e3_gpu/final_test_evaluation.csv",
+      "bytes": 418
+    },
+    {
+      "path": "runs/lr_1e3_gpu/final_test_evaluation.json",
+      "bytes": 2704
+    },
+    {
+      "path": "runs/lr_1e3_gpu/training_history.csv",
+      "bytes": 1385
+    },
+    {
+      "path": "runs/lr_1e3_gpu/training_history.json",
+      "bytes": 4803
+    },
+    {
+      "path": "src/training/__init__.py",
+      "bytes": 687
+    },
+    {
+      "path": "src/training/checkpoint.py",
+      "bytes": 15425
+    },
+    {
+      "path": "src/training/config.py",
+      "bytes": 8551
+    },
+    {
+      "path": "src/training/diagnostics.py",
+      "bytes": 12528
+    },
+    {
+      "path": "src/training/evaluate_test.py",
+      "bytes": 11772
+    },
+    {
+      "path": "src/training/metrics.py",
+      "bytes": 5905
+    },
+    {
+      "path": "src/training/optimizer.py",
+      "bytes": 6498
+    },
+    {
+      "path": "src/training/run_experiment.py",
+      "bytes": 2873
+    },
+    {
+      "path": "src/training/scheduler.py",
+      "bytes": 3724
+    },
+    {
+      "path": "src/training/trainer.py",
+      "bytes": 19397
+    },
+    {
+      "path": "tests/test_training_pipeline.py",
+      "bytes": 35549
+    }
+  ]
+}

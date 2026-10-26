@@ -1,0 +1,37 @@
+================================================================================
+      EVALUASI MODEL MINI-BERT BAHASA INDONESIA (INDEPENDEN & STERIL)           
+================================================================================
+Device Komputasi : cuda
+Nama GPU         : NVIDIA GeForce RTX 4060 Laptop GPU
+Runtime CUDA     : 12.4
+Direktori Model  : runs/lr_1e3_gpu/best_model
+Berkas Evaluasi  : data/processed/pilot\test_chunks.jsonl
+Batch Size       : 32 | Eval Seed: 42
+Output Target    : runs/lr_1e3_gpu/final_test_evaluation.json & runs/lr_1e3_gpu/final_test_evaluation.csv
+--------------------------------------------------------------------------------
+[Integritas Hash]
+  - model.pt SHA-256   : 0c0de0b0b88f51b5d7dfc474a3dc8bcbfe6d86d3c527e30869fd28eccb1ef8b8 (Lolos Verifikasi)
+  - config.json SHA-256: 521a31762dea889dc6ae865d9ad20816b90cecc35eb8212b2b725445a51f3026 (Lolos Verifikasi)
+  - vocab canonical    : d2be29d07e76fe0cd15c3fe1b765325a5397a5e5fe30b2c6a5a019c976c552f2 (Lolos Verifikasi)
+  - data file SHA-256  : f82e9d06e1f2c8aac888195c926f61db42eec75c75f685ceb68202b8b9c4f868 (Lolos Verifikasi)
+--------------------------------------------------------------------------------
+[Dataset Chunks]
+  - Total Chunk Fisik Sumber : 3,427
+  - Chunk Siap Evaluasi MLM  : 3,426
+  - Chunk Dikeluarkan (Zero) : 1
+    * doc_id=3792, chunk_index=3 (Seluruh token isi adalah [UNK] atau token khusus; tidak ada kandidat token reguler (ID >= 5) yang layak dijadikan target masking MLM.)
+--------------------------------------------------------------------------------
+Menjalankan inferensi evaluasi...
+================================================================================
+                           HASIL EVALUASI MODEL                                 
+================================================================================
+Total Target Token Evaluasi : 27,071
+Masked Cross-Entropy Loss   : 5.494842 nats
+Exp(masked-token loss)      : 243.4330
+Top-1 Accuracy              : 17.4430% (4,722/27,071)
+Top-5 Accuracy              : 31.7535% (8,596/27,071)
+Durasi Komputasi            : 1.04 detik (3281.1 chunks/detik)
+================================================================================
+[Laporan Tersimpan] JSON : runs/lr_1e3_gpu/final_test_evaluation.json
+[Laporan Tersimpan] CSV  : runs/lr_1e3_gpu/final_test_evaluation.csv
+Selesai.
