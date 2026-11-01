@@ -172,17 +172,39 @@ Untuk melanjutkan pengujian integrasi bersama arsitektur Mini-BERT (Anggota 2) d
 
 ## 9. Menjalankan Seluruh Pengujian Unit (*Unit Tests*)
 
-Repositori ini dilengkapi dengan 36 unit test otomatis:
+Repositori ini dilengkapi dengan 100 unit test otomatis yang mencakup pipeline data, arsitektur model, inferensi, pipeline pelatihan, dan validasi notebook:
 
 ```bash
-.\.venv\Scripts\python.exe -m unittest discover tests
-# Ran 36 tests in ~4.0s - OK
+python -m unittest discover tests
+# Ran 100 tests in ~10.2s - OK
 ```
 
 ---
 
 ## 10. Batasan Korpus Pilot
 
-- Dataset 3.000 artikel ini bertujuan memvalidasi kebenaran pipeline data secara *end-to-end*. Korpus ini **bukan sampel representatif seluruh Wikipedia Bahasa Indonesia**.
+- Dataset 3.000 artikel ini bertujuan memvalidasi kebenaran pipeline data secara *end-to-end*. Korpus ini bukan sampel representatif seluruh Wikipedia Bahasa Indonesia.
 - Tokenizer berbasis kata menghasilkan UNK rate ~12,6% pada validasi, yang memadai untuk pilot namun dapat dievaluasi menggunakan subword (BPE/WordPiece) untuk dataset skala penuh.
 - Panjang urutan awal dikunci pada `max_length = 64` untuk efisiensi komputasi awal.
+
+---
+
+## 11. Menjalankan Notebook Demo
+
+Untuk demonstrasi interaktif dan peninjauan hasil model tanpa melatih ulang, repositori ini menyediakan notebook panduan:
+`notebooks/demo_minibert_indonesia.ipynb`
+
+### A. Dependensi Tambahan Notebook
+Notebook ini memanfaatkan pustaka inti proyek ditambah pustaka visualisasi:
+```bash
+# Pasang paket penunjang visualisasi kurva dan kernel Jupyter
+pip install matplotlib ipykernel
+```
+
+### B. Langkah Menjalankan dan Memilih Kernel
+1. Buka folder repositori pada VS Code, Antigravity IDE, atau JupyterLab.
+2. Buka berkas `notebooks/demo_minibert_indonesia.ipynb`.
+3. Pada sudut kanan atas editor, klik tombol pemilihan kernel (**Select Kernel**).
+4. Pilih environment Python proyek tempat dependensi PyTorch terpasang.
+5. Jalankan sel secara berurutan (*sequential*) dari sel pertama hingga akhir, atau pilih **Run All**.
+6. Model final terlatih (`runs/lr_1e3_gpu/best_model`) akan dimuat pada mode evaluasi CPU secara default, memungkinkan pengujian prediksi token `[MASK]` dan peninjauan riwayat eksperimen tanpa memerlukan GPU.

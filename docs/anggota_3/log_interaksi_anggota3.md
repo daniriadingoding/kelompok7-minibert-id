@@ -342,6 +342,34 @@ Berdasarkan tinjauan mendalam atas kode aktual dan kebutuhan operasional di GPU 
 - **Anggota 1**: Bertanggung jawab penuh atas akuisisi data, pembersihan korpus, tokenisasi word-level, pembuatan kosakata kanonikal 8.000 kata, pemecahan split (train, validation, test), serta chunking teks (`src/data/`). Anggota 3 tidak mengklaim pembuatan korpus atau kosakata.
 - **Anggota 2**: Bertanggung jawab atas desain awal arsitektur model Mini-BERT (`src/models/`), kontrak model, dan penyediaan perangkat keras akselerasi GPU (Lenovo Legion Slim 5, NVIDIA RTX 4060 Laptop GPU 8GB) yang mengeksekusi kedua run pelatihan (4.220 steps) serta eksekusi inferensi evaluasi split test. Anggota 3 merancang kode dan konfigurasinya, sedangkan eksekusi GPU dilakukan oleh Anggota 2.
 
+---
+
+## 13. PEKERJAAN TAMBAHAN PASCA-PENGEMBANGAN: PEMBUATAN JUPYTER NOTEBOOK DEMO
+
+### A. Konteks dan Tujuan Pekerjaan Tambahan:
+Setelah seluruh siklus pelatihan model, evaluasi test set, penguncian model, dan penulisan dokumen analisis selesai, dibuat sebuah antarmuka interaktif berupa Jupyter Notebook pada path `notebooks/demo_minibert_indonesia.ipynb`. Notebook ini bertujuan memudahkan dosen penilai dan pengguna eksternal dalam memahami proyek, memuat checkpoint model final, menguji inferensi prediksi token `[MASK]`, serta meninjau hasil eksperimen tanpa harus menjalankan ulang pelatihan atau evaluasi dataset.
+
+### B. Rincian Implementasi Notebook:
+1. **Antarmuka Modul Terpadu**:
+   - Notebook memanggil antarmuka resmi proyek secara langsung dari direktori `src/` (`src.data.tokenizer.WordLevelTokenizer`, `src.models.bert.MiniBertForMaskedLM`, dan `src.models.predict.predict_mask`), tanpa menyalin ulang implementasi model atau tokenizer.
+2. **Pemeriksaan Portabel dan Lingkungan Komputasi**:
+   - Mendeteksi root direktori proyek secara dinamis baik kernel dijalankan dari root maupun folder `notebooks/`.
+   - Menggunakan CPU sebagai perangkat komputasi default agar demonstrasi dapat dijalankan pada komputer tanpa GPU, disertai deteksi perangkat CUDA opsional.
+3. **Validasi Model dan Verifikasi Kosakata**:
+   - Memuat model final terbaik dari `runs/lr_1e3_gpu/best_model` dengan validasi hash kanonikal kosakata (`d2be29d07e76fe0cd15c3fe1b765325a5397a5e5fe30b2c6a5a019c976c552f2`), memverifikasi status checkpoint `trained`, dan menampilkan jumlah parameter unik sebesar 1.453.760 parameter.
+4. **Demonstrasi Interaktif Prediksi [MASK]**:
+   - Menyediakan sel masukan yang dapat diedit langsung oleh pengguna (kalimat masukan, nilai top-k, pilihan perangkat).
+   - Menyediakan contoh uji tetap yang mencakup konteks semantik standar, struktur gramatikal, multi-mask (2 token [MASK] yang dievaluasi secara paralel), serta kalimat yang memuat kata di luar kosakata (OOV).
+   - Menangani kasus batas seperti ketiadaan token `[MASK]`, urutan melebihi 64 token, atau ketiadaan CUDA tanpa menghentikan eksekusi *Run All*.
+5. **Penyajian Hasil Eksperimen dan Visualisasi**:
+   - Membaca dan menampilkan perbandingan riwayat validasi per epoch dari kedua percobaan pelatihan GPU (`runs/baseline_gpu/training_history.json` dan `runs/lr_1e3_gpu/training_history.json`).
+   - Menyajikan metrik evaluasi test independen dari `runs/lr_1e3_gpu/final_test_evaluation.json` (Masked Loss: 5.4948, Top-1: 17.4430%, Top-5: 31.7535%).
+   - Menyertakan visualisasi kurva menggunakan `matplotlib` dengan mekanisme fallback teks jika pustaka belum terpasang.
+6. **Dokumentasi Keterbatasan dan Pengujian Unit**:
+   - Merangkum 6 keterbatasan metodologis model (kosakata word-level, konteks 64 token, kontribusi tanda baca pada akurasi, satu seed eksperimen, skema 80/10/10, dan skala korpus pilot).
+   - Menambahkan berkas pengujian unit `tests/test_demo_notebook.py` yang memvalidasi struktur format notebook v4, kelengkapan bagian, ketiadaan path privat, serta penonaktifan sel auto-install.
+   - Seluruh 100 pengujian unit otomatis pada repositori terverifikasi lolos (Ran 100 tests, OK).
+
 
 
 
