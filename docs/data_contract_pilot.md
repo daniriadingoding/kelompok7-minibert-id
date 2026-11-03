@@ -249,7 +249,7 @@ Seluruh paket serah terima data dan kode tersimpan lengkap dan siap pakai:
 6. **Dokumentasi & Arsip Percakapan AI Asli**:
    - [`README.md`](file:///c:/Semester%207/GEN%20AI/MIDTERM/KELOMPOK%207/README.md) (Panduan ringkas serah terima)
    - [`docs/data_contract_pilot.md`](file:///c:/Semester%207/GEN%20AI/MIDTERM/KELOMPOK%207/docs/data_contract_pilot.md) (Kontrak data ini)
-   - [`docs/log_interaksi_tahap1.md`](file:///c:/Semester%207/GEN%20AI/MIDTERM/KELOMPOK%207/docs/log_interaksi_tahap1.md) s/d [`tahap5.md`](file:///c:/Semester%207/GEN%20AI/MIDTERM/KELOMPOK%207/docs/log_interaksi_tahap5.md)
+   - [`docs/anggota_1/log_interaksi_tahap1.md`](anggota_1/log_interaksi_tahap1.md) s/d [`tahap5.md`](anggota_1/log_interaksi_tahap5.md)
    - [`docs/ai_interaction_transcript.jsonl`](file:///c:/Semester%207/GEN%20AI/MIDTERM/KELOMPOK%207/docs/ai_interaction_transcript.jsonl) (Arsip transkrip JSONL percakapan AI 736 KB)
    - [`docs/ai_interaction_transcript_full.jsonl`](file:///c:/Semester%207/GEN%20AI/MIDTERM/KELOMPOK%207/docs/ai_interaction_transcript_full.jsonl) (Arsip transkrip lengkap 1.104 KB)
 

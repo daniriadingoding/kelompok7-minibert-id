@@ -50,7 +50,7 @@
    - `data/sample/sample_metadata.json`
    - `docs/sample_audit_report.json`
    - `docs/sample_audit_report.md`
-   - `docs/log_interaksi_tahap1.md`
+   - `docs/anggota_1/log_interaksi_tahap1.md`
 2. **Kualitas Sampel**:
    - 300 artikel unik sempurna (0 duplikat ID, 0 duplikat hash teks).
    - 100% kolom terisi lengkap (`id`, `url`, `title`, `text` bertipe `str`).

@@ -164,7 +164,7 @@ Untuk melanjutkan pengujian integrasi bersama arsitektur Mini-BERT (Anggota 2) d
    - `tests/test_dataset_and_collator.py`
 6. **Dokumentasi & Arsip Percakapan AI Asli**:
    - `docs/data_contract_pilot.md` (Dokumen kontrak data v1.1.0)
-   - `docs/log_interaksi_tahap1.md` s/d `tahap5.md`
+   - `docs/anggota_1/log_interaksi_tahap1.md` s/d `tahap5.md`
    - `docs/ai_interaction_transcript.jsonl` (Arsip transkrip JSONL asli 736 KB)
    - `docs/ai_interaction_transcript_full.jsonl` (Arsip transkrip lengkap 1.104 KB)
 
